@@ -83,3 +83,5 @@ ggplot(data = mpg) +
 p <- ggplot (data = mpg,
              mapping= aes(x = class, y = hwy))
 p + geom_boxplot(fill = "lightyellow")
+
+p + geom_boxplot(fill = "lightyellow") + coord_flip() # 눕히기
